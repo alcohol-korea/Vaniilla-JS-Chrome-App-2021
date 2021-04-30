@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+</head>
+<body>
+   <div class="left">
+        <input type="checkbox" id="menu-icon">
+        <label for="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        </label>
+        <div class="sidebar">    
+        </div>
+        <form class="js-toDoForm">
+                <input type="text" placeholder="write to do today">
+        </form>
+        <div class="js-toDoContainer">
+            <div class="pendingContainer">
+             <h2>pending</h2>
+               <ul class="js-pendingList">    
+               </ul>
+            </div> 
+            <div class="finishedContainer">   
+             <h2>finished</h2> 
+                <ul class="js-finishedList">
+                </ul>
+            </div>
+        </div>
+        <div class="js-colorContainer">
+            <h4>Choose The Font-Color</h4>
+            <form class="js-colorForm">
+                <input type="color" value="#ffffff">
+            </form>
+        </div>   
+    </div>
+    <div class="middle">
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        <form class="js-form form">
+            <input type="text" placeholder="What is your name?"/>
+        </form>
+        <h4 class="js-greeting greeting"></h4>
+    </div>
+    <div class="right">
+        <span class="js-weather"></span>
+        <div class="icon">
+            <a  href="https://www.youtube.com/channel/UCUpJs89fSBXNolQGOYKn0YQ">
+                <i class="fab fa-youtube fa-3x"></i>
+            </a>
+            <a class="netflix" href="https://www.netflix.com/browse">
+                <img src="https://cdn-images-1.medium.com/max/1200/1*ty4NvNrGg4ReETxqU2N3Og.png">
+            </a>
+            <a class="nomard" href="https://nomadcoders.co/courses">
+                <img src="data:image/png;base64,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">
+            </a>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todos.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
+    <script src="fontColor.js"></script>
+    <script
+    src="https://kit.fontawesome.com/6478f529f2.js"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
