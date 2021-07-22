@@ -19,6 +19,7 @@ function paintColor(color){
 }
 
 function colorChange(event){
+    console.log(event);
     event.preventDefault();
     const uservalue = event.target.value;
     paintColor(uservalue);
